@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gradient">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subway Sandwich"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/dateField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Current Date"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/timeField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:hint="Time"
+            android:layout_marginBottom="16dp"/>
+
+        <EditText
+            android:id="@+id/customerNameField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Length of Bread"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/breadLengthGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <RadioButton
+                android:id="@+id/length15cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="15cm"
+                android:checked="true"
+                android:layout_marginRight="16dp"/>
+
+            <RadioButton
+                android:id="@+id/length30cm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="30cm"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Toppings"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"/>
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:layout_marginBottom="16dp">
+
+            <CheckBox
+                android:id="@+id/paneerCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Paneer"/>
+
+            <CheckBox
+                android:id="@+id/onionCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Onion"/>
+
+            <CheckBox
+                android:id="@+id/mushroomCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mushroom"/>
+
+            <CheckBox
+                android:id="@+id/jalapenoCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jalapeno"/>
+        </GridLayout>
+
+        <AutoCompleteTextView
+            android:id="@+id/drinkField"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Select Drink"
+            android:layout_marginBottom="16dp"/>
+
+        <Button
+            android:id="@+id/orderButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order"/>
+
+    </LinearLayout>
+</ScrollView>
